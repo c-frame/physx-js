@@ -62,7 +62,13 @@ You may want to make your own builds from source, or modify the bindings yoursel
 
 The only dependencies you need to do this are Docker, Node and Npm. All other dependencies are managed inside the docker image.
 
-The scripts run from this repo expect the repo `prestomation/PhysX#emscripten_wip` to be mounted here at `./PhysX`.
+The scripts run from this repo expect the repo `c-frame/PhysXSDK#emscripten_wip` to be mounted here at `./PhysX`.
+
+```
+git clone -b emscripten_wip git@github.com:c-frame/PhysXSDK.git PhysX
+
+```
+
 
 ```
 // Install dependencies
