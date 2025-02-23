@@ -11,10 +11,10 @@
     "url": "https://github.com/ashconnell/physx-js/issues"
   },
   "scripts": {
-    "generate": "docker run --rm -v $(pwd):/src trzeci/emscripten ./generate.sh",
-    "make": "docker run --rm -v $(pwd):/src trzeci/emscripten ./make.sh",
-    "clean": "docker run --rm -v $(pwd):/src trzeci/emscripten ./clean.sh",
-    "shell": "docker run --rm -it -v $(pwd):/src trzeci/emscripten /bin/bash",
+    "generate": "docker run --rm -v $(pwd):/src trzeci/emscripten:1.39.18-upstream ./generate.sh",
+    "make": "docker run --rm -v $(pwd):/src trzeci/emscripten:1.39.18-upstream ./make.sh",
+    "clean": "docker run --rm -v $(pwd):/src trzeci/emscripten:1.39.18-upstream ./clean.sh",
+    "shell": "docker run --rm -it -v $(pwd):/src trzeci/emscripten:1.39.18-upstream /bin/bash",
     "prep-examples": "./prep-examples.sh"
   }
 }
